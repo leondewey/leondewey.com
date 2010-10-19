@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+jekyll && rsync -avz --delete _site/ leondewey@leondewey.com:~/leondewey.com/public
