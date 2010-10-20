@@ -1,0 +1,44 @@
+---
+layout: post
+title: Image Hammer - fun with Sinatra and Mini magic
+---
+
+h1. {{ page.title }}
+
+p(meta). {{page.date | date_to_string}} - Sydney
+
+Image hammer is basically a image manipulation service. It has two modes one is based on a profile you create via a rest api and the another revolves around a GET.
+
+
+h4. The GET
+
+The get is the the most basic of the two approaches. You pass a image and some manipulation instructions along with a hash and get back the result.
+
+"http://image-hammer.heroku.com/anything.jpg?resize=100x100&url=http://leondewey.com/images/bike.jpg&hash=f48c45837044a00f622e66064cd631d5":http://image-hammer.heroku.com/anything.jpg?resize=100x100&url=http://leondewey.com/images/bike.jpg&hash=f48c45837044a00f622e66064cd631d5
+
+
+h4. The rest api
+
+With this approach you create a profile (Via a http POST) then you get a clean url to hit
+
+<script src="http://gist.github.com/636373.js"> </script>
+
+Then you can hit the following urls:
+- "http://image-hammer.heroku.com/leondewey-small/bike.jpg":http://image-hammer.heroku.com/leondewey-small/bike.jpg
+- "http://image-hammer.heroku.com/leondewey-medium/bike.jpg":http://image-hammer.heroku.com/leondewey-medium/bike.jpg
+
+Orignal
+- "http://leondewey.com/images/bike.jpg":http://leondewey.com/images/bike.jpg
+
+
+h4. Installation
+
+<pre class="terminal"><code>$ git clone git://github.com/leondewey/image-hammer.git
+$ cd image-hammer
+$ ruby app.rb</code></pre>
+
+Note you will need the following gems:
+- sinatra
+- sinatra/authorization
+- sinatra/sequel
+- mini_magick

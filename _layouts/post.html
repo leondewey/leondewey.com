@@ -5,6 +5,7 @@ layout: default
 {{ content }}
 </div>
 
+{% if site.related_posts.length > 0 %}
 <div id="related">
   <h2>Other Posts</h2>
   <ul class="posts">
@@ -13,3 +14,4 @@ layout: default
     {% endfor %}
   </ul>
 </div>
+{% endif %}

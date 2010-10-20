@@ -5,6 +5,10 @@
    <title>{{ page.title }}</title>
    <meta name="author" content="Leon Dewey" />
 
+   <link rel="alternate" type="application/rss+xml" title="leondewey.com" href="/atom.xml" />
+
+   <link href='http://fonts.googleapis.com/css?family=Tangerine:bold&subset=latin' rel='stylesheet' type='text/css'>
+   
    <!-- syntax highlighting CSS -->
    <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
 
@@ -32,8 +36,7 @@
 
 <div class="site">
   <div class="title">
-    <a href="/">Leon Dewey</a>
-    <a class="extra" href="/">home</a>
+    <a href="/" class="heading">leondewey.com</a>
   </div>
   
   {{ content }}
@@ -42,21 +45,21 @@
     <div class="contact">
       <p>
         Leon Dewey<br />
-        <a href="http://twitter.com/leondewey/">twitter.com/leondewey</a>
-        
+        leon@leondewey.com
       </p>
     </div>
     <div class="contact">
       <p>
-        leon@leondewey.com<br />
-        <a href="http://github.com/leondewey/">github.com/leondewey</a>
+        <a href="http://twitter.com/leondewey">twitter.com/leondewey</a><br />
+        <a href="http://github.com/leondewey">github.com/leondewey</a><br />
       </p>
     </div>
-    <div class="rss">
-      <a href="http://feeds.feedburner.com/tom-preston-werner">
-        <img src="/images/rss.png" alt="Subscribe to RSS Feed" />
-      </a>
+    <div class="contact">
+      <p>
+        <a href="/atom.xml">rss</a>
+      </p>
     </div>
+    
   </div>
 </div>
 

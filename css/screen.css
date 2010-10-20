@@ -24,9 +24,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-size: 100%;
-}
-
-h1 {
   margin-bottom: 1em;
 }
 
@@ -49,6 +46,11 @@ a:visited {
 table {
   font-size: inherit;
   font: 100%;
+}
+
+.heading {
+  font-family: 'Tangerine', arial, serif;
+  font-size: 500%;
 }
 
 /*****************************************************************************/
@@ -118,7 +120,7 @@ ul.posts {
   .site .footer {
     font-size: 80%;
     color: #666;
-    border-top: 4px solid #eee;
+    border-top: 1px solid #eee;
     margin-top: 2em;
     overflow: hidden;
   }
@@ -129,17 +131,7 @@ ul.posts {
     }
 
       .site .footer .contact a {
-        color: #8085C1;
-      }
-
-    .site .footer .rss {
-      margin-top: 1.1em;
-      margin-right: -.2em;
-      float: right;
-    }
-
-      .site .footer .rss img {
-        border: 0;
+        color: #666;
       }
 
 /*****************************************************************************/
